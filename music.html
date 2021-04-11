@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="music.css">
+	<title>MUSIC WEBSITE</title>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+	<img src="haso/disc.png" class="logo">
+	<ul>
+		<li> <a href="#">Home</a></li>
+		<li> <a href="#">About</a></li>
+		<li> <a href="#">Products</a></li>
+		<li> <a href="#">Connect</a></li>
+		
+	</ul>
+
+</div>
+<div class="content">
+	<div class="left-col">
+		
+<h1>THE<br>REAL<br>SOUND</h1>
+
+	</div>
+<div class="right-col">
+	
+	<p>Click Here To Listen </p>
+	<img  id="img" src="haso/notes.png">
+</div>
+
+</div>
+
+
+</div>
+<audio id="mysong">
+
+	<source src="haso/hureem.mp3" type="audio/mp3" >
+
+</audio>
+
+<script type="text/javascript">
+	
+	let mysong = document.getElementById("mysong");
+	let img = document.getElementById("img");
+	img.onclick = function(){
+		mysong.play();
+	}
+ 
+</script>
+</body>
+</html>
